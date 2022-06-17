@@ -28,7 +28,7 @@ def predict():
         return ('No model here to use')
     
     
-@app.route("/login", methods=["GET", "POST"])
+@app.route("/login", methods=["GET"])
 def login():
     eturn "<center><h1> This is the Login Route </h1></center>"
 
