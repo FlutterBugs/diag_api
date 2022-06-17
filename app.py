@@ -26,6 +26,11 @@ def predict():
             return jsonify({'trace': traceback.format_exc()})
     else:
         return ('No model here to use')
+    
+    
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    eturn "<center><h1> This is the Login Route </h1></center>"
 
 if __name__ == '__main__':
     app.run(debug=True)
