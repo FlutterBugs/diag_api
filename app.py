@@ -10,7 +10,7 @@ app = Flask(__name__)
 def home():
     return "<center><h1> This is the Home Route </h1></center>"
 
-@app.route("/predict", methods=["GET", "POST"])
+@app.route("/predict", methods=["POST"])
 def predict():
     lr = joblib.load("diagnosis_model.pkl")
     if lr:
